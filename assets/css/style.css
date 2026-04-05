@@ -1,0 +1,46 @@
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Small floating cards */
+.animate-float-small {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-small-delay {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Scroll indicator */
+@keyframes scroll {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(10px); opacity: 0; }
+}
+
+.animate-scroll {
+  animation: scroll 1.5s infinite;
+}
+
+/* Logo Infinite Scroll */
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logo-scroll {
+  animation: logoScroll 20s linear infinite;
+}
