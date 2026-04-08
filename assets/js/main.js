@@ -111,3 +111,26 @@ setInterval(() => {
   index = (index + 1) % totalSlides;
   updateSlider();
 }, 5000);
+
+// ===============================
+// FAQ ACCORDION
+// ===============================
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    const text = item.querySelector("p");
+    const icon = item.querySelector("span");
+
+    text.classList.toggle("hidden");
+
+    if (text.classList.contains("hidden")) {
+      icon.innerText = "+";
+    } else {
+      icon.innerText = "−";
+    }
+
+  });
+});
