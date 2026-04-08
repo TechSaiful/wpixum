@@ -76,3 +76,38 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 counters.forEach(counter => counterObserver.observe(counter));
+
+
+
+// ===============================
+// TESTIMONIAL SLIDER
+// ===============================
+
+const slider = document.getElementById("testimonialSlider");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+let index = 0;
+const totalSlides = slider.children.length;
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Next
+nextBtn.addEventListener("click", () => {
+  index = (index + 1) % totalSlides;
+  updateSlider();
+});
+
+// Prev
+prevBtn.addEventListener("click", () => {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateSlider();
+});
+
+// Auto Slide (optional)
+setInterval(() => {
+  index = (index + 1) % totalSlides;
+  updateSlider();
+}, 5000);
