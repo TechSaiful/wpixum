@@ -10,7 +10,7 @@ once: true
 document.addEventListener("DOMContentLoaded", function () {
 
 // HEADER
-fetch('/components/header.html')
+fetch('components/header.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('header').innerHTML = data;
@@ -18,7 +18,7 @@ fetch('/components/header.html')
   .catch(err => console.error('Header error:', err));
 
 // FOOTER
-fetch('/components/footer.html')
+fetch('components/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
