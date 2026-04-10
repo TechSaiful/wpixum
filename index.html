@@ -26,27 +26,9 @@
 
 <body class="bg-white text-gray-900 transition duration-300 mt-20">
 
-    <!-- Navbar -->
-<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    
-    <h1 class="text-xl font-bold"><a href="/">Wpixum</a></h1>
-
-    <nav class="hidden md:flex space-x-6">
-      <a href="index.html" class="hover:text-blue-500">Home</a>
-      <a href="about.html" class="hover:text-blue-500">About</a>
-      <a href="services.html" class="hover:text-blue-500">Services</a>
-      <a href="portfolio.html" class="hover:text-blue-500">Portfolio</a>
-      <a href="pricing.html" class="hover:text-blue-500">Pricing</a>
-      <a href="contact.html" class="hover:text-blue-500">Contact</a>
-    </nav>
-
-    <a href="consultation.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-      Free Consultation
-    </a>
-
-  </div>
-</header>
+<!-- Header components starts -->
+<div id="header"></div>
+<!-- Header components ends -->
 
 <!-- ================= HERO SECTION START ================= -->
 <section class="relative overflow-hidden bg-white pt-28 pb-20">
@@ -877,7 +859,103 @@
 <!-- ========================= -->
 
 
+<!-- ========================= -->
+<!-- PORTFOLIO PAGE START -->
+<!-- ========================= -->
 
+<section class="py-24 bg-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- HEADER -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Our Portfolio
+      </h1>
+      <p class="text-gray-500 max-w-2xl mx-auto">
+        Explore our recent projects and see how we help businesses grow with modern website design.
+      </p>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="flex justify-center flex-wrap gap-4 mb-12">
+
+      <button class="filter-btn px-5 py-2 border rounded-full active" data-filter="all">
+        All
+      </button>
+
+      <button class="filter-btn px-5 py-2 border rounded-full" data-filter="business">
+        Business
+      </button>
+
+      <button class="filter-btn px-5 py-2 border rounded-full" data-filter="ecommerce">
+        E-commerce
+      </button>
+
+      <button class="filter-btn px-5 py-2 border rounded-full" data-filter="landing">
+        Landing Page
+      </button>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- ITEM -->
+      <div class="portfolio-item" data-category="business">
+        <div class="group relative overflow-hidden rounded-xl">
+          <img src="https://placehold.co/400" class="w-full h-full object-cover">
+
+          <!-- HOVER -->
+          <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <div class="text-white text-center">
+              <h4 class="font-bold text-lg">Business Website</h4>
+              <p class="text-sm">View Project</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="portfolio-item" data-category="ecommerce">
+        <div class="group relative overflow-hidden rounded-xl">
+          <img src="https://placehold.co/400" class="w-full h-full object-cover">
+
+          <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <div class="text-white text-center">
+              <h4 class="font-bold text-lg">E-commerce Store</h4>
+              <p class="text-sm">View Project</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="portfolio-item" data-category="landing">
+        <div class="group relative overflow-hidden rounded-xl">
+          <img src="https://placehold.co/400" class="w-full h-full object-cover">
+
+          <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <div class="text-white text-center">
+              <h4 class="font-bold text-lg">Landing Page</h4>
+              <p class="text-sm">View Project</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PORTFOLIO PAGE END -->
+<!-- ========================= -->
 
 
 
@@ -907,12 +985,7 @@
 
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white py-10">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <h3 class="text-xl font-semibold mb-2">Wpixum</h3>
-    <p class="text-gray-400">© 2026 All rights reserved.</p>
-  </div>
-</footer>
+ <div id="footer"></div>
 
 
 <!-- scripts -->
