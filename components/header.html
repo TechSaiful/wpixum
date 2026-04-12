@@ -1,6 +1,6 @@
 
 <!-- Navbar -->
-<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+<!-- <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     
     <h1 class="text-xl font-bold"><a href="/">Wpixum</a></h1>
@@ -19,4 +19,65 @@
     </a>
 
   </div>
+</header> -->
+
+
+
+<header id="mainHeader" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="index.html" class="text-xl font-bold text-black">
+      Wpixum
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+
+      <!-- CTA -->
+      <a href="consultation.html"
+         class="ml-4 px-5 py-2 bg-blue-600 text-white rounded-full text-sm hover:scale-105 transition">
+         Free Consultation
+      </a>
+
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menuToggle" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+       class="fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center gap-8 text-lg font-medium transform translate-y-full transition duration-500">
+
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="portfolio.html" class="mobile-link">Portfolio</a>
+    <a href="pricing.html" class="mobile-link">Pricing</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+
+    <a href="consultation.html"
+       class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-full">
+       Free Consultation
+    </a>
+
+    <!-- CLOSE -->
+    <button id="menuClose" class="absolute top-6 right-6 text-3xl">
+      ✕
+    </button>
+
+  </div>
+
 </header>

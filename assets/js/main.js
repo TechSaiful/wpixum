@@ -200,3 +200,48 @@ btn.addEventListener("click", () => {
 });
 
 
+// ===============================
+// HEADER INTERACTION
+// ======================================================
+
+const header = document.getElementById("mainHeader");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("bg-white", "shadow-md", "backdrop-blur-md");
+  } else {
+    header.classList.remove("bg-white", "shadow-md", "backdrop-blur-md");
+  }
+});
+
+
+// ===============================
+// MOBILE MENU TOGGLE
+// ===============================
+const menu = document.getElementById("mobileMenu");
+const openBtn = document.getElementById("menuToggle");
+const closeBtn = document.getElementById("menuClose");
+
+if (openBtn) {
+  openBtn.addEventListener("click", () => {
+    menu.classList.remove("translate-y-full");
+  });
+}
+
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("translate-y-full");
+  });
+}
+
+
+// ===============================
+// ACTIVE LINK DETECTION
+// ===============================
+const links = document.querySelectorAll(".nav-link, .mobile-link");
+
+links.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});

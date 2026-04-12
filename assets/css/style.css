@@ -44,3 +44,46 @@
 .animate-logo-scroll {
   animation: logoScroll 20s linear infinite;
 }
+
+
+
+/* HEADER DEFAULT -------------------------------------*/
+/* NAV LINK ANIMATION */
+.nav-link {
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #2563eb;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK */
+.nav-link.active {
+  color: #2563eb;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* MOBILE MENU ACTIVE */
+.mobile-link.active {
+  color: #2563eb;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
